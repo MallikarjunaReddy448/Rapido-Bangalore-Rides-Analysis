@@ -17,7 +17,8 @@ def main():
     # Load Data
     @st.cache_data
     def load_data():
-        df = pd.read_csv('streamlit_dashboard/rides_data.csv')
+        df = pd.read_csv(os.path.join(os.getcwd(),'rides_data.csv')) 
+        # df = pd.read_csv('streamlit_dashboard/rides_data.csv') For Github Deployment
         df['date'] = pd.to_datetime(df['date'])
         return df
 
@@ -398,13 +399,13 @@ def main():
                     pad=15,
                     thickness=20,
                     line=dict(color="black", width=0.5),
-                    label=top_source_destination_pairs['source'].tolist() + top_source_destination_pairs['destination'].tolist()
+                    label= [f"{s} →" for s in top_source_destination_pairs['source']] + top_source_destination_pairs['destination'].tolist()
                 ),
                 link=dict(
-                    source=top_source_destination_pairs['source'].astype('category').cat.codes.tolist(),
-                    target=top_source_destination_pairs['destination'].astype('category').cat.codes.tolist(),
-                    value=top_source_destination_pairs['count'].tolist()
-                )
+                source=top_source_destination_pairs['source'].astype('category').cat.codes.tolist(),
+                target=top_source_destination_pairs['destination'].astype('category').cat.codes.tolist(),
+                value=top_source_destination_pairs['count'].tolist()
+            )
             ))
 
             fig7.update_layout(title_text="Top 10 Most Common Ride Routes - Sankey Diagram")
