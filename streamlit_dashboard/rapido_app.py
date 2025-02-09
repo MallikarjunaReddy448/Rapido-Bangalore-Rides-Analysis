@@ -17,7 +17,7 @@ def main():
     # Load Data
     @st.cache_data
     def load_data():
-        df = pd.read_csv(os.path.join(os.getcwd(),'rides_data.csv'))
+        df = pd.read_csv(os.path.join(os.getcwd(), 'streamlit_dashboard/rapido_app.py'))
         df['date'] = pd.to_datetime(df['date'])
         return df
 
