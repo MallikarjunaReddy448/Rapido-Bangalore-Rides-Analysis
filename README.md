@@ -47,7 +47,7 @@ POWER BI DASHBOARDS
 - Displays insights into total revenue, monthly trends, and top revenue-generating areas.
 - Helps Rapido optimize pricing strategies and boost revenue streams.
 
-![Revenue Dashboard](images/revenue_dashboard.png)
+![Revenue Dashboard](Power_BI_Dashboard/Images/dashboard_1.png)
 
 2️⃣ Rides Overview
 - Analyzes total rides, peak hours, and customer segmentation.  
