@@ -53,13 +53,13 @@ POWER BI DASHBOARDS
 - Analyzes total rides, peak hours, and customer segmentation.  
 - Provides actionable insights to improve customer satisfaction.
 
-![Rides Overview](images/rides_overview.png)
+![Rides Overview](Power_BI_Dashboard/Images/dashboard_2.png)
 
 3️⃣ Forecasting & Q&A Section
 - Forecasts future rides & revenue using historical data.
 - Enables interactive Q&A for business decision-making.
 
-![Forecasting & Q&A](images/forecasting_qna.png)
+![Forecasting & Q&A](Power_BI_Dashboard/Images/dashboard_3.png)
 
 HOW TO USE THIS ANALYSIS
 1. Explore the Power BI dashboards for deep insights into revenue, rides, and future trends.
